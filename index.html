@@ -63,6 +63,49 @@ small,.muted,.page-head p,.panel-head p{color:#67635b}
  .content-cards{grid-template-columns:1fr}
  .content-art{min-height:180px}
 }
+
+/* V3: compact receptionist-first mobile, original desktop retained. */
+.more-layer[hidden]{display:none!important}.more-layer{display:none}
+@media(max-width:700px){
+ html,body{max-width:100%;overflow-x:clip}
+ body{font-size:15px;line-height:1.45;background:#f6f7f2;color:#24372d}
+ .demo-banner{min-height:28px;padding:5px 10px;font-size:11px;background:#254c3a;letter-spacing:0;line-height:1.35}
+ .demo-banner strong{font-size:11px;color:#fff;letter-spacing:.02em}
+ .demo-banner span{display:none}
+ .topbar{height:65px;padding:0 16px;background:#fff;border-color:#e4e9df}
+ .topbar-brand img{width:155px;max-width:49vw;max-height:46px;object-fit:contain;object-position:left center}
+ .offline-pill{font-size:11px;padding:6px 9px;background:#f6f8f3;color:#395b44;border-color:#e1e9df}
+ main{padding:18px 16px calc(92px + env(safe-area-inset-bottom));max-width:520px}
+ .section-note{font-size:13px;line-height:1.45;margin-bottom:14px}
+ .page-head{margin:0 0 17px;display:block}.eyebrow{font-size:11px;letter-spacing:.095em;margin-bottom:4px;color:#276149}
+ h1{font-size:30px;line-height:1.1;color:#24372d}.page-head p{font-size:14px;line-height:1.4;margin-top:6px;color:#566b59;max-width:36ch}
+ h2{font-size:23px}.hero{display:none}
+ .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 15px}
+ .stat{padding:12px 14px;border:1px solid #dfe9de;border-radius:13px;min-width:0}
+ .stat:first-child{grid-column:1/-1;background:#275b43;color:#fff;display:grid;grid-template-columns:1fr auto;align-items:center;min-height:79px;border-color:#275b43}
+ .stat:first-child .stat-label{color:#e7f3e6;font-size:15px;font-weight:700;min-height:0}.stat:first-child strong{grid-row:1/3;grid-column:2;font:36px/1 Georgia,serif;color:#fff;margin:0}
+ .stat:first-child small{color:#d3e8d6;font-size:12px;grid-column:1}
+ .stat .stat-label{font-size:13px;line-height:1.3;min-height:0;color:#47624e}.stat strong{font-size:27px;margin:3px 0;color:#285c43}.stat small{font-size:11px;color:#627367}
+ .content-grid{display:flex;flex-direction:column;gap:13px}.panel{padding:17px;border-radius:14px}
+ .panel-head{margin-bottom:12px;align-items:flex-start}.panel-head p{font-size:12px}.panel-head h2{font-size:21px}
+ .link-button{font-size:13px;min-height:44px;padding:8px 5px;white-space:nowrap}
+ .request{display:block;padding:13px;border:1px solid #e4eae1}.request-main strong{font-size:15px}.request-main p{font-size:13px}.request-main .time{font-size:13px;margin:5px 0 9px}.badge{font-size:11px;padding:5px 9px;white-space:normal}
+ .btn{min-height:44px;font-size:13px}.notice{font-size:13px}.step strong{font-size:14px}.step p{font-size:13px}
+ .bottom-nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-rows:1fr;gap:0;min-height:66px;padding:5px 5px calc(5px + env(safe-area-inset-bottom));width:100%;max-width:100%;overflow:visible;box-shadow:0 -4px 18px #24412d14;background:#fff;border-color:#dbe4db}
+ .bottom-nav .nav-btn{height:56px;min-height:56px;min-width:0;padding:3px 1px;gap:2px;font-size:11px;font-weight:700;white-space:nowrap;box-shadow:none;border-radius:9px;color:#5b6b5f}
+ .bottom-nav .nav-btn.active{color:#176447;background:#e9f3e9;box-shadow:none}
+ .bottom-nav .nav-icon{font-size:21px;line-height:1.15}
+ .patient-grid,.content-cards{grid-template-columns:1fr}.patient{padding:16px}.patient strong,.patient dd{font-size:14px}.patient dt,.patient small{font-size:12px}
+ .chat-list{min-width:0}.chat-person{min-height:56px;font-size:13px;flex-basis:151px}.chat-person small{font-size:11px}.chat-header{padding:14px}.messages{padding:13px}.bubble{font-size:14px;max-width:88%}
+ .filter{min-width:0}.result-count{font-size:12px}.finance-row strong{font-size:14px}.finance-row small{font-size:12px}
+ .more-layer{position:fixed;inset:0;z-index:20;display:block}.more-backdrop{position:absolute;inset:0;background:#162a1fb8}
+ .more-sheet{position:absolute;bottom:0;left:0;right:0;background:#f9fbf7;padding:9px 18px calc(21px + env(safe-area-inset-bottom));border-radius:23px 23px 0 0;box-shadow:0 -10px 40px #13271a40;max-height:85dvh;overflow-y:auto}
+ .more-grip{width:37px;height:4px;background:#b9cbb9;border-radius:5px;margin:0 auto 16px}
+ .more-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}.more-head h2{font-size:26px}.close-sheet{border:1px solid #cddfcf;background:#fff;color:#244b34;border-radius:10px;min-height:44px;padding:8px 11px;font-size:13px;font-weight:700}
+ #more-links{display:grid;gap:8px}#more-links .nav-btn{background:#fff;border:1px solid #e0e9de;min-height:57px;font-size:16px;color:#284d37;border-radius:12px;padding:10px 14px}#more-links .nav-btn.active{background:#e5f2e8;border-color:#a5cdb0;box-shadow:none}#more-links .nav-icon{font-size:23px;width:28px}
+ .more-caption{font-size:12px;color:#58705d;margin-top:17px}.sheet-open{overflow:hidden}
+}
+@media(max-width:360px){main{padding-left:12px;padding-right:12px}.topbar{padding:0 12px}.topbar-brand img{max-width:45vw}.bottom-nav .nav-btn{font-size:10.5px;letter-spacing:-.35px}.bottom-nav .nav-icon{font-size:20px}.offline-pill{font-size:10px}}
 </style>
   <script defer>let requests = [
  {id:"DEMO-01",patient:"Paciente fictício A",type:"Pedido de consulta",slot:"Horário a combinar",status:"requested"},
@@ -90,16 +133,21 @@ let main;
 function el(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n}
 function add(parent,...children){parent.append(...children);return parent}
 function button(text,cls,action){const n=el("button",cls,text);n.type="button";n.addEventListener("click",action);return n}
-function navigate(key){page=key;renderNav();render();main.focus({preventScroll:true});window.scrollTo({top:0,behavior:"instant"})}
-function renderNav(){for(const [targetId,mobile] of [["side-nav",false],["bottom-nav",true]]){const target=document.getElementById(targetId);target.replaceChildren();for(const t of tabs){const b=el("button","nav-btn"+(page===t.key?" active":""));b.type="button";b.setAttribute("aria-label",t.label);if(page===t.key)b.setAttribute("aria-current","page");add(b,el("span","nav-icon",t.icon),el("span","",mobile&&t.key==="finance"?"Finanças":t.label));b.addEventListener("click",()=>navigate(t.key));target.append(b)}}}
+let moreReturn=null;
+function openMore(){const sheet=document.getElementById("more-layer");moreReturn=document.activeElement;sheet.hidden=false;document.body.classList.add("sheet-open");document.getElementById("more-toggle").setAttribute("aria-expanded","true");document.getElementById("more-close").focus()}
+function closeMore(restore=true){const sheet=document.getElementById("more-layer");if(sheet.hidden)return;sheet.hidden=true;document.body.classList.remove("sheet-open");document.getElementById("more-toggle").setAttribute("aria-expanded","false");if(restore)(moreReturn?.isConnected?moreReturn:document.getElementById("more-toggle")).focus()}
+document.addEventListener("keydown",e=>{const sheet=document.getElementById("more-layer");if(!sheet||sheet.hidden)return;if(e.key==="Escape"){e.preventDefault();closeMore();return}if(e.key!=="Tab")return;const controls=[...sheet.querySelectorAll("button:not([disabled])")];const first=controls[0],last=controls.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}});
+function navigate(key){closeMore(false);page=key;renderNav();render();main.focus({preventScroll:true});window.scrollTo({top:0,behavior:"instant"})}
+function navButton(t,area){const b=el("button","nav-btn"+(page===t.key?" active":""));b.type="button";b.setAttribute("aria-label",t.label);if(page===t.key)b.setAttribute("aria-current","page");add(b,el("span","nav-icon",t.icon),el("span","",t.label));b.addEventListener("click",()=>navigate(t.key));area.append(b)}
+function renderNav(){const side=document.getElementById("side-nav"),bottom=document.getElementById("bottom-nav"),more=document.getElementById("more-links");side.replaceChildren();bottom.replaceChildren();more.replaceChildren();tabs.forEach(t=>navButton(t,side));for(const key of ["home","agenda","chat","patients"]){navButton(tabs.find(t=>t.key===key),bottom)}const toggle=button("","nav-btn more-toggle"+( ["agent","finance","content"].includes(page)?" active":""),openMore);toggle.id="more-toggle";toggle.setAttribute("aria-label","Mais seções");toggle.setAttribute("aria-haspopup","dialog");toggle.setAttribute("aria-controls","more-sheet");toggle.setAttribute("aria-expanded","false");if(["agent","finance","content"].includes(page))toggle.setAttribute("aria-current","page");add(toggle,el("span","nav-icon","☷"),el("span","","Mais"));bottom.append(toggle);for(const key of ["agent","finance","content"])navButton(tabs.find(t=>t.key===key),more)}
 function head(kicker,title,subtitle){const box=el("div","page-head"),copy=el("div");add(copy,el("div","eyebrow",kicker),el("h1","",title),el("p","",subtitle));add(box,copy,el("span","date-tag","AMBIENTE DE DEMONSTRAÇÃO"));return box}
 function panel(title,subtitle){const p=el("section","panel"),header=el("div","panel-head"),text=el("div");add(text,el("h2","",title));if(subtitle)add(text,el("p","",subtitle));header.append(text);p.append(header);return [p,header]}
 function badge(status){return el("span","badge "+status,labels[status])}
-function requestCard(item,actions=true){const card=el("article","request"),left=el("div","request-main");add(left,el("strong","",item.patient),el("p","",item.id+" · "+item.type),el("div","time",item.slot));if(actions && ["requested","postponed"].includes(item.status)){const row=el("div","request-actions");const confirm=button("Confirmar · só exemplo","btn primary",()=>perform("confirmar",item.id));confirm.disabled=true;row.append(confirm);if(item.status!=="postponed"){const postpone=button("Adiar · só exemplo","btn subtle",()=>perform("adiar",item.id));postpone.disabled=true;row.append(postpone)}left.append(row)}add(card,left,badge(item.status));return card}
+function requestCard(item,actions=false){const card=el("article","request"),left=el("div","request-main");add(left,el("strong","",item.patient),el("p","",item.id+" · "+item.type),el("div","time",item.slot));if(actions && ["requested","postponed"].includes(item.status)){const row=el("div","request-actions");const confirm=button("Confirmar · só exemplo","btn primary",()=>perform("confirmar",item.id));confirm.disabled=true;row.append(confirm);if(item.status!=="postponed"){const postpone=button("Adiar · só exemplo","btn subtle",()=>perform("adiar",item.id));postpone.disabled=true;row.append(postpone)}left.append(row)}add(card,left,badge(item.status));return card}
 function note(text){return el("div","section-note",text)}
-function renderHome(){main.append(head("VISÃO GERAL · DEMO","Bom dia, Denise.","Exemplos visuais sem servidor. Nenhuma agenda real conectada."));const hero=el("section","hero"),text=el("div");add(text,el("div","eyebrow","RECEPÇÃO · DEMO SEM EFEITO REAL"),el("h2","","Cada solicitação no seu tempo."),el("p","","Insira um evento sintético para testar o fluxo. Nenhum horário é reservado nem mensagem enviada."));const insert=button("Pedido ilustrativo","btn primary",insertFixture);insert.disabled=true;text.append(insert);add(hero,text,el("div","hero-art","Fluxo ilustrativo ✳"));main.append(hero);
-const counts={requested:requests.filter(r=>r.status==="requested").length,confirmed:requests.filter(r=>r.status==="confirmed").length,postponed:requests.filter(r=>r.status==="postponed").length};const stats=el("div","stats");for(const [name,key] of [["A confirmar","requested"],["Confirmados","confirmed"],["Adiados","postponed"]]){const s=el("div","stat");add(s,el("div","stat-label",name),el("strong","",String(counts[key])),el("small","","No banco local DEMO"));stats.append(s)}main.append(stats);
-const grid=el("div","content-grid"),[left,header]=panel("Solicitações recentes","Exemplos fictícios sem vínculo com calendário");header.append(button("Ver agenda →","link-button",()=>navigate("agenda")));const list=el("div","request-list");for(const r of requests.slice(0,3))list.append(requestCard(r));if(!requests.length)list.append(el("div","empty","Sem pedidos DEMO. Insira um evento sintético acima."));left.append(list);const [right]=panel("Como funciona nesta prévia","Três momentos da recepção");const steps=el("div","step-list");for(const [num,title,desc] of [["1","Pedido chega","Pedido de exemplo aparece na tela"],["2","Denise decide","Nesta prévia, a decisão é só ilustrada"],["3","Equipe acompanha","A versão de testes registra estado e recibo"]]){const step=el("div","step"),copy=el("div");add(copy,el("strong","",title),el("p","",desc));add(step,el("span","step-marker",num),copy);steps.append(step)}right.append(steps,el("div","notice","Prévia visual: não há cadastro real, disparo, calendário ou integração."));add(grid,left,right);main.append(grid)}
+function renderHome(){main.append(head("RECEPÇÃO · DADOS FICTÍCIOS","Hoje na recepção","Solicitações de exemplo para visualizar a rotina. Nenhuma agenda está conectada."));const hero=el("section","hero"),text=el("div");add(text,el("div","eyebrow","RECEPÇÃO · DEMO SEM EFEITO REAL"),el("h2","","Cada solicitação no seu tempo."),el("p","","Esta tela é apenas uma maquete. Nenhum horário é reservado nem mensagem enviada."));add(hero,text,el("div","hero-art","Fluxo ilustrativo ✳"));main.append(hero);
+const counts={requested:requests.filter(r=>r.status==="requested").length,confirmed:requests.filter(r=>r.status==="confirmed").length,postponed:requests.filter(r=>r.status==="postponed").length};const stats=el("div","stats");for(const [name,key] of [["A confirmar","requested"],["Confirmados","confirmed"],["Adiados","postponed"]]){const s=el("div","stat");add(s,el("div","stat-label",name),el("strong","",String(counts[key])),el("small","","Dados fictícios"));stats.append(s)}main.append(stats);
+const grid=el("div","content-grid"),[left,header]=panel("Pedidos para acompanhar","Exemplos fictícios sem vínculo com calendário");header.append(button("Ver agenda →","link-button",()=>navigate("agenda")));const list=el("div","request-list");for(const r of requests.slice(0,3))list.append(requestCard(r));if(!requests.length)list.append(el("div","empty","Sem pedidos de exemplo."));left.append(list);const [right]=panel("Como funciona nesta prévia","Três momentos da recepção");const steps=el("div","step-list");for(const [num,title,desc] of [["1","Pedido chega","Pedido de exemplo aparece na tela"],["2","Denise decide","Nesta prévia, a decisão é só ilustrada"],["3","Equipe acompanha","Um piloto integrado, separado desta prévia, poderia registrar o estado"]]){const step=el("div","step"),copy=el("div");add(copy,el("strong","",title),el("p","",desc));add(step,el("span","step-marker",num),copy);steps.append(step)}right.append(steps,el("div","notice","Prévia visual: não há cadastro real, disparo, calendário ou integração."));add(grid,left,right);main.append(grid)}
 function visibleRequests(){return requests.filter(r=>(filter==="all"||r.status===filter)&&(`${r.patient} ${r.type} ${r.id} ${r.slot}`.toLocaleLowerCase("pt-BR").includes(query.toLocaleLowerCase("pt-BR"))))}
 function renderRequestList(container,count){const matched=visibleRequests();container.replaceChildren();count.textContent=`${matched.length} ${matched.length===1?"resultado":"resultados"}`;if(!matched.length)container.append(el("div","empty","Nenhuma solicitação corresponde aos filtros."));else for(const r of matched)container.append(requestCard(r))}
 function renderAgenda(){main.append(head("SOLICITAÇÕES · DEMO","Fila de solicitações","Estados ilustrativos; isto não é uma agenda real."));main.append(note("Nesta prévia, os botões não gravam nem reservam horário."));const bar=el("div","toolbar"),search=el("input","search"),select=el("select","filter"),count=el("span","result-count");search.type="search";search.placeholder="Buscar pedido fictício ou tipo";search.setAttribute("aria-label","Buscar solicitações");search.value=query;for(const [value,text] of [["all","Todos os status"],["requested","Solicitados"],["confirmed","Confirmados DEMO"],["postponed","Adiados DEMO"],["review","Revisão humana DEMO"]]){const option=el("option","",text);option.value=value;select.append(option)}select.value=filter;select.setAttribute("aria-label","Filtrar status");const wrap=el("div","table-card"),list=el("div","request-list");search.addEventListener("input",()=>{query=search.value;renderRequestList(list,count)});select.addEventListener("change",()=>{filter=select.value;renderRequestList(list,count)});add(bar,search,select,count);wrap.append(list);main.append(bar,wrap);renderRequestList(list,count)}
@@ -125,8 +173,8 @@ function renderContent(){
   info.append(el("p","content-disclaimer","Sem acesso ao Instagram, sem botão de publicar e sem sincronização de aprovações. O calendário editorial anterior é rascunho; a presença de um tema aqui não comprova arte final nem envio."));
   main.append(info);
 }
-function render(){main.replaceChildren();if(feedback)main.append(el("div",feedback.startsWith("Falha")?"section-note error":"section-note",feedback));if(lastReceipt)main.append(el("div","section-note",`Última ação DEMO relida: ${lastReceipt.operation} · ${lastReceipt.status} · ${lastReceipt.receipt||"sem recibo"}. Sem efeito real.`));({home:renderHome,agenda:renderAgenda,patients:renderPatients,chat:renderChat,agent:renderAgent,finance:renderFinance,content:renderContent}[page])()}
-document.addEventListener('DOMContentLoaded',()=>{main=document.querySelector('#main');renderNav();render()});
+function render(){main.replaceChildren();if(feedback && !feedback.startsWith("Demonstração visual:") && page!=="home")main.append(el("div",feedback.startsWith("Falha")?"section-note error":"section-note",feedback));if(lastReceipt)main.append(el("div","section-note",`Última ação DEMO relida: ${lastReceipt.operation} · ${lastReceipt.status} · ${lastReceipt.receipt||"sem recibo"}. Sem efeito real.`));({home:renderHome,agenda:renderAgenda,patients:renderPatients,chat:renderChat,agent:renderAgent,finance:renderFinance,content:renderContent}[page])()}
+document.addEventListener('DOMContentLoaded',()=>{main=document.querySelector('#main');document.getElementById("more-close").addEventListener("click",()=>closeMore());document.querySelector(".more-backdrop").addEventListener("click",()=>closeMore());renderNav();render()});
 </script>
 </head>
 <body>
@@ -144,5 +192,14 @@ document.addEventListener('DOMContentLoaded',()=>{main=document.querySelector('#
     </div>
   </div>
   <nav id="bottom-nav" class="bottom-nav" aria-label="Navegação móvel"></nav>
+  <div id="more-layer" class="more-layer" hidden>
+    <div class="more-backdrop" aria-hidden="true"></div>
+    <section id="more-sheet" class="more-sheet" role="dialog" aria-modal="true" aria-labelledby="more-title">
+      <div class="more-grip" aria-hidden="true"></div>
+      <div class="more-head"><div><span class="eyebrow">NAVEGAÇÃO</span><h2 id="more-title">Mais seções</h2></div><button id="more-close" class="close-sheet" type="button" aria-label="Fechar mais seções">Fechar <span aria-hidden="true">×</span></button></div>
+      <nav id="more-links" aria-label="Outras seções"></nav>
+      <p class="more-caption">Prévia visual · dados fictícios, sem integração.</p>
+    </section>
+  </div>
 </body>
 </html>
